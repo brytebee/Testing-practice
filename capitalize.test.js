@@ -12,4 +12,8 @@ describe('Capitalize string', () => {
   test('transform "Capitalize" to "Capitalize"', () => {
     expect(capitalize("Capitalize")).toBe("Capitalize");
   });
+  
+  test('Request a string if other input data type', () => {
+    expect(capitalize(10708)).toBe("Enter a string");
+  });
 });
